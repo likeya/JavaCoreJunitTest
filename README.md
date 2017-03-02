@@ -1,0 +1,2 @@
+# JavaCoreJunitTest
+Junit better practices
