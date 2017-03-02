@@ -24,4 +24,4 @@
 *EN*
  - Java. Of course,Most any version will work,though the examples in this programe use Java 8
  - An IDE.This programe was built using IntelliJ IDEA,but you can you Eclipse or pretty much any editor.
- - Junit. The programe usr Junit 4.12,if you;re using an older version of java ,Junit 3.x should work for any version of java from 1.6 on. 
+ - Junit. The programe use Junit 4.12,if you're using an older version of java ,Junit 3.x should work for any version of java from 1.6 on. 
