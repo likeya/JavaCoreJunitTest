@@ -9,10 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-
         <!--Test libraries-->
         <junit.version>4.12</junit.version>
-
     </properties>
     <repositories>
         <repository>
