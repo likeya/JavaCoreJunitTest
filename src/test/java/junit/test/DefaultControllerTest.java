@@ -33,7 +33,23 @@ public class DefaultControllerTest {
     }
 
     private class SampleRespone implements Response {
+        private static final String NAME = "Test";
 
+        public boolean equals(Object obj) {
+            Boolean result = false;
+            if (obj instanceof SampleRespone) {
+                result = ((SampleRespone) obj).getName().equals(getName());
+            }
+            return result;
+        }
+
+        public int hashCode() {
+            return NAME.hashCode();
+        }
+
+        public String getName() {
+            return NAME;
+        }
     }
 
     /*
@@ -91,4 +107,10 @@ public class DefaultControllerTest {
         assertEquals(SampleRespone.class, response.getClass());
     }
 
+    @Test
+    public void AddHanderAndProcessRequestTest() {
+        Response response = controller.processRequest(request);
+        assertNotNull(response);
+        assertEquals(new SampleRespone(), response);
+    }
 }

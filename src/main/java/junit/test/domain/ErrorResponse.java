@@ -22,4 +22,8 @@ public class ErrorResponse implements Response {
     public Exception getOriginalException() {
         return originalException;
     }
+
+    public String getName() {
+        return null;
+    }
 }
